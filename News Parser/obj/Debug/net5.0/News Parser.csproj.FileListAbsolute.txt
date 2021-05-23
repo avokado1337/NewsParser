@@ -1,0 +1,34 @@
+C:\Users\Sultan-PC\Desktop\News Parser\News Parser\bin\Debug\net5.0\News Parser.exe
+C:\Users\Sultan-PC\Desktop\News Parser\News Parser\bin\Debug\net5.0\News Parser.deps.json
+C:\Users\Sultan-PC\Desktop\News Parser\News Parser\bin\Debug\net5.0\News Parser.runtimeconfig.json
+C:\Users\Sultan-PC\Desktop\News Parser\News Parser\bin\Debug\net5.0\News Parser.runtimeconfig.dev.json
+C:\Users\Sultan-PC\Desktop\News Parser\News Parser\bin\Debug\net5.0\News Parser.dll
+C:\Users\Sultan-PC\Desktop\News Parser\News Parser\bin\Debug\net5.0\ref\News Parser.dll
+C:\Users\Sultan-PC\Desktop\News Parser\News Parser\bin\Debug\net5.0\News Parser.pdb
+C:\Users\Sultan-PC\Desktop\News Parser\News Parser\obj\Debug\net5.0\News Parser.csprojAssemblyReference.cache
+C:\Users\Sultan-PC\Desktop\News Parser\News Parser\obj\Debug\net5.0\News Parser.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sultan-PC\Desktop\News Parser\News Parser\obj\Debug\net5.0\News Parser.AssemblyInfoInputs.cache
+C:\Users\Sultan-PC\Desktop\News Parser\News Parser\obj\Debug\net5.0\News Parser.AssemblyInfo.cs
+C:\Users\Sultan-PC\Desktop\News Parser\News Parser\obj\Debug\net5.0\News Parser.csproj.CoreCompileInputs.cache
+C:\Users\Sultan-PC\Desktop\News Parser\News Parser\obj\Debug\net5.0\News Parser.dll
+C:\Users\Sultan-PC\Desktop\News Parser\News Parser\obj\Debug\net5.0\ref\News Parser.dll
+C:\Users\Sultan-PC\Desktop\News Parser\News Parser\obj\Debug\net5.0\News Parser.pdb
+C:\Users\Sultan-PC\Desktop\News Parser\News Parser\obj\Debug\net5.0\News Parser.genruntimeconfig.cache
+C:\Users\Sultan-PC\Desktop\News Parser\News Parser\bin\Debug\net5.0\HtmlAgilityPack.dll
+C:\Users\Sultan-PC\Desktop\News Parser\News Parser\obj\Debug\net5.0\News Parser.csproj.CopyComplete
+C:\Users\Sultan-PC\Desktop\News Parser\News Parser\bin\Debug\net5.0\System.Net.Http.Formatting.dll
+C:\Users\Sultan-PC\Desktop\News Parser\News Parser\bin\Debug\net5.0\System.Web.Http.dll
+C:\Users\Sultan-PC\Desktop\News Parser\News Parser\bin\Debug\net5.0\System.Web.Http.WebHost.dll
+C:\Users\Sultan-PC\Desktop\News Parser\News Parser\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Sultan-PC\Desktop\News Parser\News Parser\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Sultan-PC\Desktop\News Parser\News Parser\bin\Debug\net5.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Sultan-PC\Desktop\News Parser\News Parser\bin\Debug\net5.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Sultan-PC\Desktop\News Parser\News Parser\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Sultan-PC\Desktop\News Parser\News Parser\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Sultan-PC\Desktop\News Parser\News Parser\bin\Debug\net5.0\Microsoft.Extensions.Logging.dll
+C:\Users\Sultan-PC\Desktop\News Parser\News Parser\bin\Debug\net5.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Sultan-PC\Desktop\News Parser\News Parser\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+C:\Users\Sultan-PC\Desktop\News Parser\News Parser\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Sultan-PC\Desktop\News Parser\News Parser\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Sultan-PC\Desktop\News Parser\News Parser\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\Sultan-PC\Desktop\News Parser\News Parser\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
