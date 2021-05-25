@@ -17,73 +17,91 @@ namespace News_Parser
                 Console.OutputEncoding = Encoding.UTF8;
 
                 //Putting the links in the variables
-                var urlNews = @"https://tengrinews.kz/news/";
 
-                var urlMain = @"https://tengrinews.kz";
+                Console.WriteLine("Введите количество страниц для парсинга:");
+                string str = Console.ReadLine();
 
-                var htmlWeb = new HtmlWeb();
-
-                var htmlDoc = htmlWeb.Load(urlNews);
-
-                //Getting the links of the news articles
-                var NewsLinksNode = htmlDoc.DocumentNode.SelectNodes("//*[@class='tn-link']");
-
-                List<string> listOfLinks = new List<string>();
+                int userInput = int.Parse(str);
 
 
-
-                //Creating a list and putting all the parsed links into it.
-                var row = new NewsModel();
-
-                foreach (var links in NewsLinksNode)
+                for (var i = 1; i <= userInput; i++)
                 {
-                    var newsLinks = urlMain + links.GetAttributeValue("href", null);
+                    var urlNews = @"https://tengrinews.kz/news/page/" + i;
 
-                    List<string> listOfLinks1 = newsLinks.Split(new char[] { ',' }).ToList();
+                    var urlMain = @"https://tengrinews.kz";
 
-                    listOfLinks.AddRange(listOfLinks1);
-                }
+                    var htmlWeb = new HtmlWeb();
 
-                //Iterating through the list of links
-                foreach (var newsInfo in listOfLinks)
-                {
-                    var htmlNews = htmlWeb.Load(newsInfo);
-                    
-                    //Getting the titles
-                    var newsTitle = htmlNews.DocumentNode.SelectSingleNode("//section[@class='tn-single-section tn-container']/div[@class='tn-content']/h1[@class='tn-content-title']/text()");
-                  
-                    //Getting dates
-                    var newsDate = htmlNews.DocumentNode.SelectSingleNode("//h1[@class='tn-content-title']/span[@class='tn-hidden']/text()");
-                    
-                    //Getting the dates
-                    var today = DateTime.Today;
-                    var yesterday = today.AddDays(-1);
-                    string normalFormat = newsDate.InnerText.ToString().Trim();
-                    var parsedDate = DateTime.Parse(normalFormat.Replace("вчера", yesterday.ToString("dd-MM-yy").Replace("сегодня", today.ToString("dd-MM-yy").ToString().Trim())));
-                    
-                    //Getting texts
-                    var newsText = htmlNews.DocumentNode.SelectNodes(".//article[@class='tn-news-text']/p[position() != last() and position() != last() - 1]/text()");
-                    StringBuilder sb = new StringBuilder();
-                    foreach (var node in newsText)
+                    var htmlDoc = htmlWeb.Load(urlNews);
+
+
+                    var nextPage = htmlDoc.DocumentNode.SelectSingleNode("//ul[@class='tn-pagination']/li[last()]/a");
+
+                    var currentPage = htmlDoc.DocumentNode.SelectSingleNode("//li[@class='tn-active']/span/text()");
+
+
+                    Console.WriteLine("Номер текущей страницы: " + currentPage.InnerText.ToString());
+
+                    List<string> listOfLinks = new List<string>();
+
+                    var row = new NewsModel();
+
+
+                    //Getting the links of the news articles
+                    var NewsLinksNode = htmlDoc.DocumentNode.SelectNodes("//*[@class='tn-link']");
+                    //Creating a list and putting all the parsed links into it.
+                    foreach (var links in NewsLinksNode)
                     {
-                        sb.Append(node.InnerText);
+                        var newsLinks = urlMain + links.GetAttributeValue("href", null);
+
+                        List<string> listOfLinks1 = newsLinks.Split(new char[] { ',' }).ToList();
+
+                        listOfLinks.AddRange(listOfLinks1);
                     }
 
-                    //Getting themes
-                    var newsTheme = htmlNews.DocumentNode.SelectSingleNode("//ol[@class='tn-bread-crumbs']/li[last()]/a/span/text()");
-
-                    context.News.Add(new NewsModel
+                    //Iterating through the list of links
+                    foreach (var newsInfo in listOfLinks)
                     {
-                        Title = newsTitle.InnerText.ToString().Trim().Replace("&quot;", @""""),
-                        Theme = newsTheme.InnerText.ToString().Trim().Replace("&quot;", @""""),
-                        Text = sb.ToString().Trim().Replace("&quot;", @""""),
-                        newsDate = parsedDate
-                    });
 
-                    context.SaveChanges();
+                        var htmlNews = htmlWeb.Load(newsInfo);
+
+                        //Getting the titles
+                        var newsTitle = htmlNews.DocumentNode.SelectSingleNode("//section[@class='tn-single-section tn-container']/div[@class='tn-content']/h1[@class='tn-content-title']/text()");
+                        Console.WriteLine(newsTitle.InnerText.Trim());
+
+                        ////Getting dates
+                        //var newsDate = htmlNews.DocumentNode.SelectSingleNode("//h1[@class='tn-content-title']/span[@class='tn-hidden']/text()");
+
+                        ////Getting the dates
+                        //var today = DateTime.Today;
+                        //var yesterday = today.AddDays(-1);
+                        //string normalFormat = newsDate.InnerText.ToString().Trim();
+                        //var parsedDate = DateTime.Parse(normalFormat.Replace("вчера", yesterday.ToString("dd-MM-yy").Replace("сегодня", today.ToString("dd-MM-yy").ToString().Trim())));
+
+                        ////Getting texts
+                        //var newsText = htmlNews.DocumentNode.SelectNodes(".//article[@class='tn-news-text']/p[position() != last() and position() != last() - 1]/text()");
+                        //StringBuilder sb = new StringBuilder();
+                        //foreach (var node in newsText)
+                        //{
+                        //    sb.Append(node.InnerText);
+                        //}
+
+                        ////Getting themes
+                        //var newsTheme = htmlNews.DocumentNode.SelectSingleNode("//ol[@class='tn-bread-crumbs']/li[last()]/a/span/text()");
+
+
+                        //context.News.Add(new NewsModel
+                        //{
+                        //    Title = newsTitle.InnerText.ToString().Trim().Replace("&quot;", @""""),
+                        //    Theme = newsTheme.InnerText.ToString().Trim().Replace("&quot;", @""""),
+                        //    Text = sb.ToString().Trim().Replace("&quot;", @""""),
+                        //    newsDate = parsedDate
+                        //});
+
+                        //context.SaveChanges();
+                    }
+                    Console.WriteLine("Success!");
                 }
-
-                Console.WriteLine("Success!");
             }
         }
     }

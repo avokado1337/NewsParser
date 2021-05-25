@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sultan-PC\\Desktop\\News Parser\\NewsAPI\\NewsAPI.csproj": {}
+    "C:\\Users\\Sultan-PC\\Desktop\\NewsParser\\NewsAPI\\NewsAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sultan-PC\\Desktop\\News Parser\\News Parser\\News_Parser.csproj": {
+    "C:\\Users\\Sultan-PC\\Desktop\\NewsParser\\News Parser\\News_Parser.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sultan-PC\\Desktop\\News Parser\\News Parser\\News_Parser.csproj",
+        "projectUniqueName": "C:\\Users\\Sultan-PC\\Desktop\\NewsParser\\News Parser\\News_Parser.csproj",
         "projectName": "News_Parser",
-        "projectPath": "C:\\Users\\Sultan-PC\\Desktop\\News Parser\\News Parser\\News_Parser.csproj",
+        "projectPath": "C:\\Users\\Sultan-PC\\Desktop\\NewsParser\\News Parser\\News_Parser.csproj",
         "packagesPath": "C:\\Users\\Sultan-PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sultan-PC\\Desktop\\News Parser\\News Parser\\obj\\",
+        "outputPath": "C:\\Users\\Sultan-PC\\Desktop\\NewsParser\\News Parser\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -85,14 +85,14 @@
         }
       }
     },
-    "C:\\Users\\Sultan-PC\\Desktop\\News Parser\\NewsAPI\\NewsAPI.csproj": {
+    "C:\\Users\\Sultan-PC\\Desktop\\NewsParser\\NewsAPI\\NewsAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sultan-PC\\Desktop\\News Parser\\NewsAPI\\NewsAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Sultan-PC\\Desktop\\NewsParser\\NewsAPI\\NewsAPI.csproj",
         "projectName": "NewsAPI",
-        "projectPath": "C:\\Users\\Sultan-PC\\Desktop\\News Parser\\NewsAPI\\NewsAPI.csproj",
+        "projectPath": "C:\\Users\\Sultan-PC\\Desktop\\NewsParser\\NewsAPI\\NewsAPI.csproj",
         "packagesPath": "C:\\Users\\Sultan-PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sultan-PC\\Desktop\\News Parser\\NewsAPI\\obj\\",
+        "outputPath": "C:\\Users\\Sultan-PC\\Desktop\\NewsParser\\NewsAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -112,8 +112,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Sultan-PC\\Desktop\\News Parser\\News Parser\\News_Parser.csproj": {
-                "projectPath": "C:\\Users\\Sultan-PC\\Desktop\\News Parser\\News Parser\\News_Parser.csproj"
+              "C:\\Users\\Sultan-PC\\Desktop\\NewsParser\\News Parser\\News_Parser.csproj": {
+                "projectPath": "C:\\Users\\Sultan-PC\\Desktop\\NewsParser\\News Parser\\News_Parser.csproj"
               }
             }
           }

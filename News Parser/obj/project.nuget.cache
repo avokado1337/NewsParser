@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/cyvdZ3vvB4JvkdxSaNYyJMbEU9cVOSQ+EGcHU8M3FHHz3sOgY6yJfLeDzZ5V8tesk9qQ0vsSY7kfrWqNIipyQ==",
+  "dgSpecHash": "3WvXWOSgWP1TbhAaKAF7nPSqwisRezCMkblcHsqisdW4WV7kIygqbgVxDNnR3pEX2U2QeHx3MmZ2UaLkmbjOmA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Sultan-PC\\Desktop\\News Parser\\News Parser\\News_Parser.csproj",
+  "projectFilePath": "C:\\Users\\Sultan-PC\\Desktop\\NewsParser\\News Parser\\News_Parser.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sultan-PC\\.nuget\\packages\\htmlagilitypack\\1.11.33\\htmlagilitypack.1.11.33.nupkg.sha512",
     "C:\\Users\\Sultan-PC\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
