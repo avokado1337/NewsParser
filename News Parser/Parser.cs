@@ -69,39 +69,42 @@ namespace News_Parser
                         var newsTitle = htmlNews.DocumentNode.SelectSingleNode("//section[@class='tn-single-section tn-container']/div[@class='tn-content']/h1[@class='tn-content-title']/text()");
                         Console.WriteLine(newsTitle.InnerText.Trim());
 
-                        ////Getting dates
-                        //var newsDate = htmlNews.DocumentNode.SelectSingleNode("//h1[@class='tn-content-title']/span[@class='tn-hidden']/text()");
+                        //Getting dates
+                        var newsDate = htmlNews.DocumentNode.SelectSingleNode("//h1[@class='tn-content-title']/span[@class='tn-hidden']/text()");
 
-                        ////Getting the dates
-                        //var today = DateTime.Today;
-                        //var yesterday = today.AddDays(-1);
-                        //string normalFormat = newsDate.InnerText.ToString().Trim();
-                        //var parsedDate = DateTime.Parse(normalFormat.Replace("вчера", yesterday.ToString("dd-MM-yy").Replace("сегодня", today.ToString("dd-MM-yy").ToString().Trim())));
+                        //Getting the dates
+                        var today = DateTime.Today;
+                        var yesterday = today.AddDays(-1);
+                        string normalFormat = newsDate.InnerText.ToString().Trim();
+                        var parsedDate = DateTime.Parse(normalFormat.Replace("вчера", yesterday.ToString("dd-MM-yy").Replace("сегодня", today.ToString("dd-MM-yy").ToString().Trim())));
 
-                        ////Getting texts
-                        //var newsText = htmlNews.DocumentNode.SelectNodes(".//article[@class='tn-news-text']/p[position() != last() and position() != last() - 1]/text()");
-                        //StringBuilder sb = new StringBuilder();
-                        //foreach (var node in newsText)
-                        //{
-                        //    sb.Append(node.InnerText);
-                        //}
+                        //Getting texts
+                        var newsText = htmlNews.DocumentNode.SelectNodes(".//article[@class='tn-news-text']/p[position() != last() and position() != last() - 1]/text()");
+                        StringBuilder sb = new StringBuilder();
+                        foreach (var node in newsText)
+                        {
+                            sb.Append(node.InnerText);
+                        }
 
-                        ////Getting themes
-                        //var newsTheme = htmlNews.DocumentNode.SelectSingleNode("//ol[@class='tn-bread-crumbs']/li[last()]/a/span/text()");
+                        //Getting themes
+                        var newsTheme = htmlNews.DocumentNode.SelectSingleNode("//ol[@class='tn-bread-crumbs']/li[last()]/a/span/text()");
 
 
-                        //context.News.Add(new NewsModel
-                        //{
-                        //    Title = newsTitle.InnerText.ToString().Trim().Replace("&quot;", @""""),
-                        //    Theme = newsTheme.InnerText.ToString().Trim().Replace("&quot;", @""""),
-                        //    Text = sb.ToString().Trim().Replace("&quot;", @""""),
-                        //    newsDate = parsedDate
-                        //});
+                        context.News.Add(new NewsModel
+                        {
+                            Title = newsTitle.InnerText.ToString().Trim().Replace("&quot;", @""""),
+                            Theme = newsTheme.InnerText.ToString().Trim().Replace("&quot;", @""""),
+                            Text = sb.ToString().Trim().Replace("&quot;", @""""),
+                            newsDate = parsedDate
+                        });
 
-                        //context.SaveChanges();
+                        context.SaveChanges();
                     }
                     Console.WriteLine("Success!");
                 }
+
+                Console.WriteLine("Finished!");
+
             }
         }
     }
