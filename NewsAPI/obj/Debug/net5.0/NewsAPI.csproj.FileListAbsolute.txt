@@ -176,3 +176,5 @@ C:\Users\Sultan-PC\Desktop\NewsParser\NewsAPI\obj\Debug\net5.0\NewsAPI.dll
 C:\Users\Sultan-PC\Desktop\NewsParser\NewsAPI\obj\Debug\net5.0\ref\NewsAPI.dll
 C:\Users\Sultan-PC\Desktop\NewsParser\NewsAPI\obj\Debug\net5.0\NewsAPI.pdb
 C:\Users\Sultan-PC\Desktop\NewsParser\NewsAPI\obj\Debug\net5.0\NewsAPI.genruntimeconfig.cache
+C:\Users\Sultan-PC\Desktop\NewsParser\NewsAPI\bin\Debug\net5.0\Lucene.Net.dll
+C:\Users\Sultan-PC\Desktop\NewsParser\NewsAPI\bin\Debug\net5.0\ICSharpCode.SharpZipLib.dll

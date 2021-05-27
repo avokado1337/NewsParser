@@ -128,6 +128,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Lucene.Net": {
+              "target": "Package",
+              "version": "[3.0.3, )"
+            },
             "Microsoft.Bcl.Async": {
               "target": "Package",
               "version": "[1.0.168, )"

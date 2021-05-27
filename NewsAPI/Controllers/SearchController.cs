@@ -20,6 +20,4 @@ namespace NewsAPI.Controllers
                 return Ok(result);
             }
         }
-
-
     }

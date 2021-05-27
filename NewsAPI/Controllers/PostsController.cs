@@ -13,22 +13,6 @@ namespace NewsAPI.Controllers
     [ApiController]
     public class PostsController : ControllerBase
     {
-        //GET api/news/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<NewsModel>> Get(int id)
-        {
-            using (var context = new NewsDbContext())
-            {
-                NewsModel news = await context.News.FirstOrDefaultAsync(x => x.NewsId == id);
-                if (news == null)
-                {
-                    return NotFound();
-                }
-                return new ObjectResult(news);
-            }
-        }
-
-
         [HttpGet]
         public ActionResult DateRange (DateTime from, DateTime to)
         {
