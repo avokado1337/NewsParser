@@ -13,11 +13,19 @@ namespace NewsAPI.Controllers
     [ApiController]
     public class PostsController : ControllerBase
     {
+        private NewsDbContext _context;
+
+        public PostsController(NewsDbContext context)
+        {
+            _context = context;
+        }
+
+
         [HttpGet]
         public ActionResult DateRange (DateTime from, DateTime to)
         {
-            NewsDbContext news = new NewsDbContext();
-            var result = news.News.Where(x => x.newsDate >= from && x.newsDate <= to);
+            //NewsDbContext news = new NewsDbContext();
+            var result = _context.News.Where(x => x.newsDate >= from && x.newsDate <= to);
             return Ok(result);
         }
 

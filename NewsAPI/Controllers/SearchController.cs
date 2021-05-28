@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using News_Parser;
 using System;
@@ -12,11 +13,18 @@ namespace NewsAPI.Controllers
     [ApiController]
     public class SearchController : ControllerBase
     {
+        private NewsDbContext _context;
+
+        public SearchController(NewsDbContext context)
+        {
+            _context = context;
+        }
+        [Authorize]
         [HttpGet]
         public IActionResult GetByWord (string word)
         {
-                NewsDbContext news = new NewsDbContext();
-                var result = news.News.Where(x => x.Text.Contains(word));
+                //NewsDbContext news = new NewsDbContext();
+                var result = _context.News.Where(x => x.Text.Contains(word));
                 return Ok(result);
             }
         }

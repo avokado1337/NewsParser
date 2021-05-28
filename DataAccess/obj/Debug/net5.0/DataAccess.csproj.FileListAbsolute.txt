@@ -1,0 +1,15 @@
+C:\Users\Sultan-PC\Desktop\NewsParser\DataAccess\bin\Debug\net5.0\DataAccess.deps.json
+C:\Users\Sultan-PC\Desktop\NewsParser\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.json
+C:\Users\Sultan-PC\Desktop\NewsParser\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.dev.json
+C:\Users\Sultan-PC\Desktop\NewsParser\DataAccess\bin\Debug\net5.0\DataAccess.dll
+C:\Users\Sultan-PC\Desktop\NewsParser\DataAccess\bin\Debug\net5.0\ref\DataAccess.dll
+C:\Users\Sultan-PC\Desktop\NewsParser\DataAccess\bin\Debug\net5.0\DataAccess.pdb
+C:\Users\Sultan-PC\Desktop\NewsParser\DataAccess\obj\Debug\net5.0\DataAccess.csprojAssemblyReference.cache
+C:\Users\Sultan-PC\Desktop\NewsParser\DataAccess\obj\Debug\net5.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sultan-PC\Desktop\NewsParser\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\Sultan-PC\Desktop\NewsParser\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfo.cs
+C:\Users\Sultan-PC\Desktop\NewsParser\DataAccess\obj\Debug\net5.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Sultan-PC\Desktop\NewsParser\DataAccess\obj\Debug\net5.0\DataAccess.dll
+C:\Users\Sultan-PC\Desktop\NewsParser\DataAccess\obj\Debug\net5.0\ref\DataAccess.dll
+C:\Users\Sultan-PC\Desktop\NewsParser\DataAccess\obj\Debug\net5.0\DataAccess.pdb
+C:\Users\Sultan-PC\Desktop\NewsParser\DataAccess\obj\Debug\net5.0\DataAccess.genruntimeconfig.cache
